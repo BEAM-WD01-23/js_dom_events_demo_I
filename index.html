@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Events</h1>
+        <!-- event refers to an action or occurrence that takes place within the browser or on a web page. 
+            It can be triggered by the user, the browser, or the web page itself. Event can be triggered 
+            by the user ex: `clicking a button` or `pressing a key on the keyboard`, or by the browser ex: 
+            `resizing the window`, or the webpage itself ex: `loading a web page`. -->
+
+        <!-- 1 -->
+        <h3 class="text">one, change my color upon click ...</h3>
+        <button id="myButton">Click me</button> <br> <br><br>
+        <!-- 2 -->
+        <div id="myBackground">
+            <h2>This message will be shown upon click on the button</h2>
+        </div>
+        <button id="myButton1">Change Background</button>
+
+        <br>
+        <br>
+        <!-- 3 -->
+        <button id="myEvent">Event</button>
+        <br>
+        <br>
+        <!-- 4, event on class -->
+        <button class="myEvent1">Trigger Event</button>
+        <br>
+        <br>
+        <!-- 5 event created on html page ... -->
+        <button onclick="eventOnHtml()">Click</button>
+        <br>
+        <br>
+        <!-- 6 message generation upon button click -->
+        <h2>score : <span id="myScore">18</span></h2>
+        <p id="message"></p>
+        <button id="showScore">See score</button>
+        <br>
+        <br>
+        <!-- 7 generate random number and compare with the lucky-number ... -->
+        <h3>Generate random number and compare it with the lucky-number</h3>
+        <div id="showMessage"></div>
+        <button id="luckyNumber">Random Number</button>
+        <button id="refresh">Refresh</button>
+        <br>
+        <br>
+        <!-- 8 add event and calculate price upon input field update ... -->
+        <h3>calculate price</h3>
+        <input type="number" id="amount" value="0" oninput="amountChanged()">
+        <div id="priceDiv">0 Euro</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
